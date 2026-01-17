@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>个人设计作品集 — 你的名字</title>
+  <meta name="description" content="个人设计师作品集 — 展示视觉设计 / UI / 平面 / 品牌等作品。" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">你的名字</a>
+      <button id="navToggle" class="nav-toggle" aria-label="切换导航">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="nav">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+        <a class="cta" href="#contact">预约咨询</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>视觉设计 & UI 作品集</h1>
+          <p>我是一名专注于品牌与界面设计的设计师，把复杂问题用简洁的视觉语言表达出来。</p>
+          <p><a class="btn" href="#work">查看作品</a></p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- 占位：替换为你的作品图 -->
+          <div class="placeholder">作品缩略图</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section-title">精选作品</h2>
+      <p class="lede">下面是部分项目案例。点击查看详情（可替换为真实链接或模态框）。</p>
+
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/800x500?text=Project+1" alt="项目1 截图">
+          <div class="card-body">
+            <h3>品牌重塑 — 项目名称</h3>
+            <p>品牌识别、视觉系统、宣传物料设计。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/800x500?text=Project+2" alt="项目2 截图">
+          <div class="card-body">
+            <h3>移动端 App UI</h3>
+            <p>用户流程、界面设计与组件库搭建。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/800x500?text=Project+3" alt="项目3 截图">
+          <div class="card-body">
+            <h3>电商页视觉设��</h3>
+            <p>视觉排布及转化优化，A/B 测试建议。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-grid">
+          <div>
+            <p>你好！我是你的名字，拥有 X 年设计经验，曾服务于若干品牌，专长于品牌识别、界面设计与视觉策略。</p>
+            <ul>
+              <li>工具：Figma / Sketch / Illustrator / Photoshop</li>
+              <li>服务：品牌建设 / UI 设计 / 交互原型 / 设计系统</li>
+            </ul>
+          </div>
+          <div class="about-photo">
+            <img src="https://via.placeholder.com/300?text=你的头像" alt="你的头像">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">联系我</h2>
+      <p class="lede">想聊合作或项目？留下信息，我会尽快联系你。</p>
+
+      <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+        <label>
+          名称
+          <input type="text" name="name" id="name" required minlength="2" placeholder="你的名字">
+        </label>
+
+        <label>
+          邮箱
+          <input type="email" name="email" id="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          信息
+          <textarea name="message" id="message" required rows="5" placeholder="请描述你的项目/需求"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">发送消息</button>
+          <a class="muted" href="mailto:youremail@example.com">或邮件: youremail@example.com</a>
+        </div>
+
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 你的名字 — 设计师</p>
+      <p class="small">授权码：0855-52EC</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
